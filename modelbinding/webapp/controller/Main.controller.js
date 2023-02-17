@@ -20,11 +20,11 @@ sap.ui.define(
   ) {
     "use strict";
 
-    return Controller.extend("modelbinding.controller.Main", {
+    return Controller.extend("modelbinding.modelbinding.controller.Main", {
       _aFollowers: [
-        { FollowerCode: "001", FollowerName: "Follower1" },
-        { FollowerCode: "002", FollowerName: "Follower2" },
-        { FollowerCode: "003", FollowerName: "Follower3" },
+        { FollowersCode: "001", FollowersName: "Ali" },
+        { FollowersCode: "002", FollowersName: "Veli" },
+        { FollowersCode: "003", FollowersName: "Zeynep" },
       ],
       onInit: function () {
         var oMainModel = this.getOwnerComponent().getModel("main");
@@ -51,7 +51,7 @@ sap.ui.define(
           oDialog
             .getBinding("items")
             .filter([
-              new Filter("ProductName", FilterOperator.Contains, sInputValue),
+              new Filter("FollowersName", FilterOperator.Contains, sInputValue),
             ]);
           // Open ValueHelpDialog filtered by the input's value
           oDialog.setModel("main", _this.getView().getModel("main"));
@@ -74,14 +74,14 @@ sap.ui.define(
           return;
         }
         var oMainModel = this.getView().getModel("main");
-        oMainModel.setProperty("/DealerCode", oSelectedItem.getTitle());
+        oMainModel.setProperty("/FollowersCode", oSelectedItem.getTitle());
       },
       onButtonPress: function (oEvent) {
         var oMainModel = this.getView().getModel("main");
-        var sDealerCode = oMainModel.getProperty("/FollowerCode");
-        if (sDealerCode) {
+        var sFollowersCode = oMainModel.getProperty("/FollowersCode");
+        if (sFollowersCode) {
           sap.m.MessageToast.show(
-            "Dealer Code" + sFollowerCode + "Has Been Sent"
+            "Followers Code" + sFollowersCode + "Has Been Sent"
           );
         }
       },

@@ -7,7 +7,7 @@
 		confirm=".onValueHelpClose"
 		cancel=".onValueHelpClose">
 		<StandardListItem
-			title="{main>FollowerCode}"
-			description="{main>FollowerName}" />
+			title="{main>FollowersCode}"
+			description="{main>FollowersName}" />
 	</SelectDialog>
 </core:FragmentDefinition>

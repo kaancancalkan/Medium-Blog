@@ -1,0 +1,36 @@
+<mvc:View controllerName="modelbinding.modelbinding.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    	xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content >
+        <VBox class ="sapUiSmallMargin"
+        >
+         <f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Model Binding"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Input id="followersInput" value="{main>/FollowersCode}" placeholder="Enter Follower Name" showSuggestion="true" showValueHelp="true" valueHelpRequest=".onValueHelpRequest" />
+                  <Button class="Btn" press="onButtonPress" activeIcon="" ariaHasPopup="None" enabled="true" icon="empty string" iconDensityAware="true" iconFirst="true" text="Send" textDirection="Inherit" type="Emphasized" width="8%" />
+			</f:content>
+		</f:SimpleForm>
+            
+        </VBox>
+     
+        </content>
+    </Page>
+</mvc:View>

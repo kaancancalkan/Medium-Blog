@@ -1,0 +1,28 @@
+<mvc:View controllerName="json.json.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table items="{Student>/Students}">
+                <columns>
+                    <Column>
+                        <Text text="Class" />
+                    </Column>
+                    <Column>
+                        <Text text="Lesson" />
+                    </Column>
+                    <Column>
+                        <Text text="Credit" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{Student>Class}" />
+                            <Text text="{Student>Lesson}" />
+                            <Text text="{Student>Credit}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

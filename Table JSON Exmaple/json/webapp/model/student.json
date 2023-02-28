@@ -1,0 +1,21 @@
+{ 
+    "Students": [{
+            "Class": "First Class",
+            "Lesson": "History",
+            "Credit": "6"
+
+        },
+        {
+            "Class": "Second Class",
+            "Lesson": "Lecturure",
+            "Credit": "4"
+        },
+        {
+            "Class": "Third Class",
+            "Lesson": "Lecturure",
+            "Credit": "4"
+        }
+
+    ]
+
+}

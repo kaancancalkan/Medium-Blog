@@ -1,5 +1,4 @@
-
-{ 
+{
     "Info": [{
         "Team": "Arsenal",
         "players_used": "29",
@@ -321,9 +320,4 @@
         "pens_conceded": "8",
         "own_goals": "0"
     }]
-
 }
-
-
-
-

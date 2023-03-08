@@ -1,0 +1,30 @@
+<c:FragmentDefinition  xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:fb="sap.ui.comp.filterbar" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc"  xmlns:core="sap.ui.core" 
+	xmlns:u="sap.ui.unified">
+<Table items="{League}">
+                <columns>
+                    <Column>
+                        <Text text="Team" />
+                    </Column>
+                    <Column>
+                        <Text text="Players Used" />
+                    </Column>
+                    <Column>
+                        <Text text="Yellow Card" />
+                    </Column>
+					<Column>
+                        <Text text="Red Card" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{League>Team}" />
+                            <Text text="{League>players_used}" />
+							<Text text="{League>cards_yellow}" />
+							<Text text="{League>cards_red}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+    	
+</c:FragmentDefinition>

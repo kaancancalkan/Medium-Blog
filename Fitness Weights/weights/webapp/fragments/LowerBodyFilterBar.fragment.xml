@@ -1,0 +1,52 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core">
+    <fb:FilterBar showClearOnFB="true" id="filterbar2" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" clear="ClearFilterbar" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
+        <fb:filterItems>
+            <fb:FilterItem name="Name" label="Name">
+                <fb:control>
+                    <MultiComboBox
+                        id="LowerBodyName"
+                        selectionChange="handleSelectionChange"
+                        selectionFinish="handleSelectionFinish"
+                        width=""
+                        placeholder="Choose Exercise Name"
+                        required="true"
+                        items="{ path: 'LowerBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                    >
+                        <core:Item key="{LowerBody>Name}" text="{LowerBody>Name}" />
+                    </MultiComboBox>
+                </fb:control>
+            </fb:FilterItem>
+			 <fb:FilterItem name="Weights" label="Weights">
+                <fb:control>
+                    <MultiComboBox
+                        id="LowerBodyWeights"
+                        selectionChange="handleSelectionChange"
+                        selectionFinish="handleSelectionFinish"
+                        width=""
+                        placeholder="Choose Weight"
+                        required="true"
+                        items="{ path: 'LowerBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                    >
+                        <core:Item key="{LowerBody>Weights}" text="{LowerBody>Weights}" />
+                    </MultiComboBox>
+                </fb:control>
+            </fb:FilterItem>
+			 <fb:FilterItem name="Reps and Sets" label="Reps and Sets">
+                <fb:control>
+                    <MultiComboBox
+                        id="LowerBodyRepsandSets"
+                        selectionChange="handleSelectionChange"
+                        selectionFinish="handleSelectionFinish"
+                        width=""
+                        placeholder="Choose Reps and Sets"
+                        required="true"
+                        items="{ path: 'LowerBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                    >
+                        <core:Item key="{LowerBody>Reps and Sets}" text="{LowerBody>Reps and Sets}" />
+                    </MultiComboBox>
+                </fb:control>
+            </fb:FilterItem>
+            
+        </fb:filterItems>
+    </fb:FilterBar>
+</c:FragmentDefinition>

@@ -1,0 +1,34 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+    xmlns:core="sap.ui.core"
+>
+<core:Fragment fragmentName="fitness.weights.Fragments.LowerBodyFilterBar" type="XML" />
+
+ <Table items="{LowerBody>/Exercise}" id="ExerciseTable2">
+                <columns>
+                    <Column>
+                        <Text text="Name" />
+                    </Column>
+                    <Column>
+                        <Text text="Muscle Group" />
+                    </Column>
+                    <Column>
+                        <Text text="Weights" />
+                    </Column>
+                    <Column>
+                        <Text text="Rep and Sets" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{LowerBody>Name}" />
+                            <Text text="{LowerBody>Muscle Group}" />
+                            <Text text="{LowerBody>Weights}" />
+                            <Text text="{LowerBody>Reps and Sets}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+</c:FragmentDefinition>

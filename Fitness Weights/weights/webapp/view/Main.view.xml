@@ -1,0 +1,16 @@
+<mvc:View controllerName="fitness.weights.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter id="UpperBody" text="UpperBody" key="info">
+                        <core:Fragment fragmentName="fitness.weights.Fragments.UpperBody" type="XML" />
+                    </IconTabFilter>
+                    <IconTabFilter id="LowerBody" text="LowerBody" key="info">
+                        <core:Fragment fragmentName="fitness.weights.Fragments.LowerBody" type="XML" />
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>

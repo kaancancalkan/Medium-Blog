@@ -1,0 +1,33 @@
+{ 
+    "Exercise": [{
+            "Name": "Leg Extension",
+            "Muscle Group": "Leg",
+            "Weights": "65 kg ",
+            "Reps and Sets" : "10-12 reps 4 sets"
+            
+        },{
+            "Name": "Calf Raise Machine",
+            "Muscle Group": "Leg",
+            "Weights": "50 kg ",
+            "Reps and Sets" : "12-15 reps 4 sets"
+            
+        },{
+            "Name": "Leg Press",
+            "Muscle Group": "Leg",
+            "Weights": "70 kg ",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Leg Curl",
+            "Muscle Group": "Leg",
+            "Weights": "60 kg ",
+            "Reps and Sets" : "10-12 reps 4 sets"
+            
+        }
+
+
+
+    ]
+
+}

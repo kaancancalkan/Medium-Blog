@@ -1,0 +1,142 @@
+{ 
+    "Exercise": [{
+            "Name": "Dumbbell Press",
+            "Muscle Group": "Chest",
+            "Weights": "30 kg Dumbbells",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Dumbbell Fly",
+            "Muscle Group": "Chest",
+            "Weights": "17,5 kg Dumbbells",
+            "Reps and Sets" : "12-15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Incline Bench Press",
+            "Muscle Group": "Chest",
+            "Weights": "45 kg without bar",
+            "Reps and Sets" : "10-12 reps 4 sets"
+            
+        },
+        {
+            "Name": "Butterfly",
+            "Muscle Group": "Chest",
+            "Weights": "45 kg",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Chest  Press Machine",
+            "Muscle Group": "Chest",
+            "Weights": "60 kg",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Lat Pulldown Wide",
+            "Muscle Group": "Back",
+            "Weights": "60 kg",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Seated Row",
+            "Muscle Group": "Back",
+            "Weights": "60 kg",
+            "Reps and Sets" : "12-15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Back Extension",
+            "Muscle Group": "Back",
+            "Weights": "Body Weight",
+            "Reps and Sets" : "15-25 reps 4 sets"
+            
+        },
+        {
+            "Name": "Lat Pulldown Narrow",
+            "Muscle Group": "Back",
+            "Weights": "60 kg",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Military Press",
+            "Muscle Group": "Shoulder",
+            "Weights": "30 kg",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Shrug",
+            "Muscle Group": "Shoulder",
+            "Weights": "30 kg Dumbbells",
+            "Reps and Sets" : "8-10 reps 4 sets"
+            
+        },
+        {
+            "Name": "Lateral Raise",
+            "Muscle Group": "Shoulder",
+            "Weights": "10 kg dumbbells",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Face Pull",
+            "Muscle Group": "Shoulder",
+            "Weights": "50 kg",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Z Bar Curl",
+            "Muscle Group": "Biceps Arm",
+            "Weights": "25 kg",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Dumbbell Curl",
+            "Muscle Group": "Biceps Arm",
+            "Weights": "12.5 kg Dumbbells",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Hammer Curl",
+            "Muscle Group": "Biceps Arm",
+            "Weights": "15 kg Dumbbells",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Rope Pushdown",
+            "Muscle Group": "Triceps Arm",
+            "Weights": "40 kg ",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Skull Crusher",
+            "Muscle Group": "Triceps Arm",
+            "Weights": "30 kg ",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        },
+        {
+            "Name": "Overhead Dumbbell Triceps Extension",
+            "Muscle Group": "Triceps Arm",
+            "Weights": "20 kg ",
+            "Reps and Sets" : "15 reps 4 sets"
+            
+        }
+
+
+
+
+
+    ]
+
+}

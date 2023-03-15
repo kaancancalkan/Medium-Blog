@@ -1,0 +1,53 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:fb="sap.ui.comp.filterbar" xmlns:core="sap.ui.core">
+    <fb:FilterBar showClearOnFB="true" id="filterbar" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" clear="ClearFilterbar" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
+        <fb:filterItems>
+            <fb:FilterItem name="Name" label="Name">
+                <fb:control>
+                    <MultiComboBox
+                        id="UpperBodyName"
+                        selectionChange="handleSelectionChange"
+                        selectionFinish="handleSelectionFinish"
+                        width=""
+                        placeholder="Choose Exercise Name"
+                        required="true"
+                        items="{ path: 'UpperBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                    >
+                        <core:Item key="{UpperBody>Name}" text="{UpperBody>Name}" />
+                    </MultiComboBox>
+                </fb:control>
+            </fb:FilterItem>
+				 <fb:FilterItem name="Muscle Group" label="Muscle Group">
+                <fb:control>
+                    <MultiComboBox
+                        id="UpperBodyMuscleGroup"
+                        selectionChange="handleSelectionChange"
+                        selectionFinish="handleSelectionFinish"
+                        width=""
+                        placeholder="Choose Muscle Group"
+                        required="true"
+                        items="{ path: 'UpperBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                    >
+                        <core:Item key="{UpperBody>Muscle Group}" text="{UpperBody>Muscle Group}" />
+                    </MultiComboBox>
+                </fb:control>
+            </fb:FilterItem>
+			 <fb:FilterItem name="Weights" label="Weights">
+                <fb:control>
+                    <MultiComboBox
+                        id="UpperBodyWeights"
+                        selectionChange="handleSelectionChange"
+                        selectionFinish="handleSelectionFinish"
+                        width=""
+                        placeholder="Choose Weight"
+                        required="true"
+                        items="{ path: 'UpperBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                    >
+                        <core:Item key="{UpperBody>Weights}" text="{UpperBody>Weights}" />
+                    </MultiComboBox>
+                </fb:control>
+            </fb:FilterItem>
+			
+            
+        </fb:filterItems>
+    </fb:FilterBar>
+</c:FragmentDefinition>

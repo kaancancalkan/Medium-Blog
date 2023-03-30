@@ -1,0 +1,32 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:smartform="sap.ui.comp.smartform">
+
+
+ <Dialog title="Dialog Title" contentWidth="600px" contentHeight="300px" id="dialog">
+        <content>
+            <smartform:SmartForm editable="true" id="mySmartForm">
+                <smartform:Group>
+                    <smartform:GroupElement label="Field 1">
+                        <Input value="{/field1}" />
+                    </smartform:GroupElement>
+                    
+                    <smartform:GroupElement label="Field 2">
+                        <Input value="{/field2}" />
+                    </smartform:GroupElement>
+                </smartform:Group>
+            </smartform:SmartForm>
+        </content>
+        
+        <beginButton>
+            <Button text="Save" press="onSave" />
+        </beginButton>
+        
+        <endButton>
+            <Button text="Cancel" press="onCancel" />
+        </endButton>
+    </Dialog>
+</c:FragmentDefinition>

@@ -1,7 +1,7 @@
 {
-  "_version": "1.49.0",
+  "_version": "1.17.0",
   "sap.app": {
-    "id": "fitness.weights",
+    "id": "com.enerya.ztestodata",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,18 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.8.5",
-      "toolsId": "c8c3fa30-ae44-4d60-9b0e-1dea67d8d8b8"
+      "toolsId": "5ba7ddac-2e3d-401f-9626-bfedd61001b5"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZFI_FIRMA_ISLEM_SRV/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -35,7 +46,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.109.3",
+      "minUI5Version": "1.71.40",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -55,18 +66,18 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "fitness.weights.i18n.i18n"
+          "bundleName": "com.enerya.ztestodata.i18n.i18n"
         }
       },
-      "UpperBody": {
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      },
+      "main": {
         "type": "sap.ui.model.json.JSONModel"
-        },
-        "LowerBody": {
-          "type": "sap.ui.model.json.JSONModel"
-          },
-          "Filter": {
-            "type": "sap.ui.model.json.JSONModel"
-            }
+       }
+
     },
     "resources": {
       "css": [
@@ -80,7 +91,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "fitness.weights.view",
+        "viewPath": "com.enerya.ztestodata.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -105,7 +116,7 @@
       }
     },
     "rootView": {
-      "viewName": "fitness.weights.view.App",
+      "viewName": "com.enerya.ztestodata.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

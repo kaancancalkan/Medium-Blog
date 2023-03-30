@@ -90,5 +90,16 @@ sap.ui.define([
                 oBinding.filter(aFilters);
                 oBinding2.filter(aFilters2);
               },
+
+
+              ClearFilterbar: function () {
+       
+                var oFilterModel = this.getView().getModel("Filter");
+                oFilterModel.setProperty("/Names", []);
+                oFilterModel.setProperty("/Weights", []);
+                oFilterModel.setProperty("/Reps and Sets", []);
+                oFilterModel.setProperty("/MuscleGroup", []);
+        
+        }
         });
     });

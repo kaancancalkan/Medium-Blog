@@ -11,6 +11,7 @@
                         placeholder="Choose Exercise Name"
                         required="true"
                         items="{ path: 'UpperBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                        selectedKeys="{Filter>/Names}"
                     >
                         <core:Item key="{UpperBody>Name}" text="{UpperBody>Name}" />
                     </MultiComboBox>
@@ -26,6 +27,7 @@
                         placeholder="Choose Muscle Group"
                         required="true"
                         items="{ path: 'UpperBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                          selectedKeys="{Filter>/MuscleGroup}"
                     >
                         <core:Item key="{UpperBody>Muscle Group}" text="{UpperBody>Muscle Group}" />
                     </MultiComboBox>
@@ -41,6 +43,7 @@
                         placeholder="Choose Weight"
                         required="true"
                         items="{ path: 'UpperBody>/Exercise', templateShareable: true, sorter: { path: 'Name' }, parameters: {distinct: true}}"
+                          selectedKeys="{Filter>/Weights}"
                     >
                         <core:Item key="{UpperBody>Weights}" text="{UpperBody>Weights}" />
                     </MultiComboBox>

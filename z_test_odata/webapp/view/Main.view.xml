@@ -1,0 +1,94 @@
+<mvc:View controllerName="com.enerya.ztestodata.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"  xmlns:core="sap.ui.core" xmlns:smartform="sap.ui.comp.smartform">
+    <Page id="page" title="{i18n>title}">
+        <Dialog title="{i18n>DialogTitle}"   id="dialog">
+            <content>
+                <smartform:SmartForm editable="true" id="mySmartForm">
+                    <smartform:Group>
+                        <smartform:GroupElement label="Proje No">
+                            <Input value="{main>/Proje/Pno}" />
+                        </smartform:GroupElement>
+
+                        <smartform:GroupElement label="Proje Türü">
+                            <Input value="{main>/Proje/Ptur}" />
+                        </smartform:GroupElement>
+                        <smartform:GroupElement label="Proje Tanım">
+                            <Input value="{main>/Proje/Tanim}" />
+                        </smartform:GroupElement>
+                        <smartform:GroupElement label="Vstelle">
+                            <Input value="{main>/Proje/Vstelle}" />
+                        </smartform:GroupElement>
+                        <smartform:GroupElement label="Durum">
+                            <Input value="{main>/Proje/Durum}" />
+                        </smartform:GroupElement>
+                        <smartform:GroupElement label="Bina Id">
+                            <Input value="{main>/Proje/Binaid}" />
+                        </smartform:GroupElement>
+                        <smartform:GroupElement label="Kayıt Tarihi">
+                            <Input value="{
+    path: 'main>/Proje/KayitTarih',
+    formatter: '.formatDate'
+}" />
+                        </smartform:GroupElement>
+
+                        <smartform:GroupElement label="Onay Tarihi">
+                            <Input value="{
+    path: 'main>/Proje/KayitTarih',
+    formatter: '.formatDate'
+}" />
+                        </smartform:GroupElement>
+
+                        <smartform:GroupElement label="Müşteri Numarası">
+                            <Input value="{main>/Proje/Kunnr}" />
+                        </smartform:GroupElement>
+
+                        <smartform:GroupElement label="Şirket Kodu">
+                            <Input value="{main>/Proje/Bukrs}" />
+                        </smartform:GroupElement>
+                    </smartform:Group>
+                </smartform:SmartForm>
+            </content>
+
+            <beginButton>
+                <!-- <Button text="Save" press="onSave" /> -->
+            </beginButton>
+
+            <endButton>
+                <Button icon="sap-icon://exit-full-screen" text="Close" press="onCancel" />
+            </endButton>
+        </Dialog>
+        <content>
+            <!-- <core:Fragment fragmentName="com.enerya.ztestodata.Fragments.Dialog" type="XML" /> -->
+            <Table id="idProductsTable" updateFinished="onTableUpdateFinish" selectionChange="onSelectionChange" mode="SingleSelectMaster" inset="false" items="{/FirmaProjeSet}">
+                <headerToolbar>
+                    <OverflowToolbar>
+                        <content>
+                            <Title text="{i18n>title}" level="H2" />
+                            <ToolbarSpacer />
+                            <Text text="{main>/Proje/Pno}" />
+                            <Text text="{
+    path: 'main>/Proje/KayitTarih',
+    formatter: '.formatDate'
+}" />
+                        </content>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column width="12em">
+                        <Text text="Proje No" />
+                    </Column>
+                    <Column width="12em">
+                        <Text text="Tanım" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem vAlign="Middle" type="Active">
+                        <cells>
+                            <Text text="{Pno}" />
+                            <Text text="{Tanim}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

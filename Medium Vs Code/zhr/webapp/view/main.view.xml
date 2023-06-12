@@ -1,0 +1,50 @@
+<mvc:View controllerName="medium.zhr.controller.main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content >
+<Table id="idPersonalTable"
+            updateFinished="onTableUpdateFinish"
+            selectionChange="onSelectionChange"
+            mode="SingleSelectMaster"
+            inset="false"
+            items="{/HRSet}">
+		<headerToolbar>
+			<OverflowToolbar> 
+				<content>
+					<Title text="Personal Datas" level="H2"/>
+					
+					<ToolbarSpacer />
+                    <Text text="{main>/Personal/Vorna}"/>
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<columns>
+			<Column width="12em">
+				<Text text="Personal No " />
+			</Column>
+            <Column width="12em">
+				<Text text="Name " />
+			</Column>
+            <Column width="12em">
+				<Text text="Surname" />
+			</Column>
+                <Column width="12em">
+				<Text text="Birth Place" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" type="Active">
+				<cells>
+					<Text text="{Pernr}"/>
+					<Text text="{Vorna}"/>
+        			<Text text="{Nachn}"/>
+					<Text text="{Gbort}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+        </content>
+    </Page>
+</mvc:View>

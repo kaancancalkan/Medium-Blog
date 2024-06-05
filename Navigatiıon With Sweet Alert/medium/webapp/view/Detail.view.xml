@@ -1,0 +1,10 @@
+<mvc:View
+    controllerName="nav.medium.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="detailPage" title="Detail Page" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <Text text="Welcome to the Detail Page"/>
+        </content>
+    </Page>
+</mvc:View>

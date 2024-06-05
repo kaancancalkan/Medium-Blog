@@ -1,0 +1,26 @@
+<mvc:View controllerName="nav.medium.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content >
+         
+     <TileContainer>
+        <StandardTile
+            id="detailTile"
+            icon="sap-icon://world"
+            title="Tile 1 "
+            info="Info for Tile 1"
+            press="onTilePress"/>
+        <StandardTile
+            id="secondTile"
+            icon="sap-icon://settings"
+            title="Tile 2"
+            info="Info for Tile 2"
+            press="onTilePress"/>
+    </TileContainer>
+
+          
+        </content>
+    </Page>
+</mvc:View>

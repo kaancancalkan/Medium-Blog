@@ -1,0 +1,10 @@
+<mvc:View
+    controllerName="nav.medium.controller.Second"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="secondPage" title="Second Page" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <Text text="Welcome to the Second Page"/>
+        </content>
+    </Page>
+</mvc:View>

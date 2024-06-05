@@ -1,11 +1,22 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
+	"sap/ui/core/mvc/Controller",
+    "nav/medium/utils/sweetalert"
 ], function(
-	Controller
+	Controller,swalJS
 ) {
 	"use strict";
 
 	return Controller.extend("nav.medium.controller.Second", {
+
+        /**
+         * @override
+         */
+        onInit: function() {
+            
+
+            swal.fire("Second View");
+        
+        },
 
         onNavBack: function () {
             var oHistory = sap.ui.core.routing.History.getInstance();
